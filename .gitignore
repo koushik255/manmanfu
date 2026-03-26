@@ -1,0 +1,69 @@
+# Git repository root is this directory (`mr/`). Paths below are relative to here.
+
+# Dependencies
+node_modules/
+
+# SvelteKit / Vite
+.svelte-kit/
+build/
+dist/
+package/
+.vite/
+vite.config.js.timestamp-*
+vite.config.ts.timestamp-*
+
+# Rust / Tauri
+src-tauri/target/
+src-tauri/gen/schemas/
+
+# Environment & local secrets
+.env
+.env.*
+!.env.example
+!.env.sample
+
+# Logs & debug
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.pnpm-debug.log*
+
+# Caches & incremental builds
+.eslintcache
+*.tsbuildinfo
+.parcel-cache/
+.turbo/
+.vercel/
+.netlify/
+
+# Test & coverage
+coverage/
+test-results/
+playwright-report/
+playwright/.cache/
+
+# OS
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Editor / IDE
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.swo
+*~
+
+# Patches & merge noise
+*.orig
+*.rej
+
+# Certificates / keys (never commit)
+*.pem
+*.key
+*.p12
